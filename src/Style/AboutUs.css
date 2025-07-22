@@ -1,0 +1,128 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  /* text left, image right */
+  gap: 2rem;
+  padding: 7rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: nowrap;  /* avoid wrapping that causes overlap */
+}
+
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  text-align: left;
+}
+
+
+.about-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #f4511e;
+  margin-left: 0;
+}
+
+.about-image {
+  flex: 1.4;
+  max-width: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+/* Back button styling */
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  color: gray;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 100;
+}
+
+.back-icon {
+  font-size: 1.4rem;
+  margin-right: 6px;
+  color: gray;
+}
+.about-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-right:40px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #555;
+  transition: transform 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.social-icon.email {
+  color: #d93025; /* Gmail red */
+}
+.social-icon.phone {
+  color: #34a853; /* Green for phone */
+}
+.social-icon.facebook {
+  color: #3b5998;
+}
+.social-icon.instagram {
+  color: #E1306C;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  color: #ff5722;
+}
+
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .about-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .about-image img {
+    max-width: 90%;
+    height: auto;
+  }
+}
