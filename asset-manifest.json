@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/HomeChef/static/css/main.d5fca575.css",
+    "main.js": "/HomeChef/static/js/main.6e4f763b.js",
+    "static/js/453.b5aba735.chunk.js": "/HomeChef/static/js/453.b5aba735.chunk.js",
+    "index.html": "/HomeChef/index.html",
+    "main.d5fca575.css.map": "/HomeChef/static/css/main.d5fca575.css.map",
+    "main.6e4f763b.js.map": "/HomeChef/static/js/main.6e4f763b.js.map",
+    "453.b5aba735.chunk.js.map": "/HomeChef/static/js/453.b5aba735.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5fca575.css",
+    "static/js/main.6e4f763b.js"
+  ]
+}
