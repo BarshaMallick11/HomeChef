@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../Style/Login.css';
 
+
 const Login = () => {
   const navigate = useNavigate();
 
@@ -38,7 +39,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={isLogin ? handleLogin : handleSignUp}>
-        <h2>{isLogin ? 'Login to Recipe World' : 'Create an Account'}</h2>
+        <h2>{isLogin ? 'Login to HomeChef ' : 'Create an Account'}</h2>
 
         {!isLogin && (
           <input
